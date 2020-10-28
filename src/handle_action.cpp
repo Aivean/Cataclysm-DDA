@@ -2429,6 +2429,10 @@ bool game::handle_action()
                 display_radiation();
                 break;
 
+            case ACTION_TOGGLE_HOUR_TIMER:
+                toggle_debug_hour_timer();
+                break;
+
             case ACTION_TOGGLE_DEBUG_MODE:
                 if( MAP_SHARING::isCompetitive() && !MAP_SHARING::isDebugger() ) {
                     break;    //don't do anything when sharing and not debugger
