@@ -214,7 +214,7 @@ class translation
     public:
         struct plural_tag {};
 
-        translation() = default;
+        translation() {};
         /**
          * Same as `translation()`, but with plural form enabled.
          **/
